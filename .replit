@@ -1,0 +1,14 @@
+compile = "pip install -e ./backend && npm install --prefix frontend"
+modules = ["nodejs-20", "python-3.12", "web"]
+run = "make dev"
+
+[deployment]
+build = ["sh", "-c", "pip install -e ./backend && npm install --prefix frontend"]
+run = ["sh", "-c", "make dev"]
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 5173
+externalPort = 80
