@@ -15,8 +15,6 @@ import {
   Pen,
   ChevronDown,
   ChevronUp,
-  CheckCircle,
-  Clock,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
